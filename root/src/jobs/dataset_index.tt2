@@ -1,0 +1,36 @@
+<h1>Job Configuration, [% instrument %] [% dataset %] Dataset</h1>
+<p>
+The current cluster configuration and expected revolutions per node.
+Currently [% njobs %] jobs configured.
+</p>
+
+<div dojoType="dijit.TitlePane" open="true">
+<div class="jobs">
+<table>
+ <thead>
+  <th>ID</th>
+  <th>Host</th>
+  <th>Rev</th>
+  <th>Last Update</th>
+ </thead>
+<tbody>
+[% FOREACH job IN jobs %]
+<tr>
+ <td>
+  [% job.id %]
+ </td>
+ <td>
+  [% job.hostname %]
+ </td>
+ <td>
+  [% job.revno %]
+ </td>
+ <td>
+  [% job.updated %]
+ </td>
+</tr>
+[% END %]
+</tbody>
+</table>
+</div>
+</div>

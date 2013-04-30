@@ -1,0 +1,55 @@
+<h1>Job Monitor - Run Status</h1>
+
+<p>
+The table below shows the status of running on the cluster.
+</p>
+<br>
+
+<div class="status">
+<table>
+<thead>
+  <th>ID</th>
+  <th>Host</th>
+  <th>Rev</th>
+  <th>Instrument</th>
+  <th>Region</th>
+  <th>Status</th>
+  <th>Info</th>
+  <th>Creation Time</th>
+  <th>Last Update</th>
+</thead>
+<tbody>
+[% FOREACH run IN runs %]
+<tr>
+<td>
+ [% run.id %]
+</td>
+ <td>
+ [% run.hostname %]
+</td>
+<td>
+ [% run.revno %]
+</td>
+<td>
+ [% run.instrument %]
+</td>
+<td>
+ [% run.region %]
+</td>
+<td>
+ [% run.status %]
+</td>
+<td>
+ [% run.info %]
+</td>
+<td>
+[% run.created %]
+</td>
+<td>
+[% run.updated %]
+</td>
+ </tr>
+[% END %]
+</tbody>
+</table>
+</div>

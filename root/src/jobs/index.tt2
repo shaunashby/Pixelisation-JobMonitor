@@ -1,0 +1,42 @@
+<h1>Job Monitor - Job Configuration</h1>
+<p>
+The current cluster configuration and expected revolutions per node.
+Currently [% njobs %] jobs configured.
+</p>
+
+<div class="jobs">
+<table>
+ <thead>
+  <th>ID</th>
+  <th>Host</th>
+  <th>Instrument</th>
+  <th>Dataset</th>
+  <th>Rev</th>
+  <th>Last Update</th>
+ </thead>
+<tbody>
+[% FOREACH job IN jobs %]
+<tr>
+ <td>
+  [% job.id %]
+ </td>
+ <td>
+  [% job.hostname %]
+ </td>
+ <td>
+  [% job.instrument %]
+ </td>
+ <td>
+  [% job.dataset %]
+ </td>
+ <td>
+  [% job.revno %]
+ </td>
+ <td>
+  [% job.updated %]
+ </td>
+</tr>
+[% END %]
+</tbody>
+</table>
+</div>

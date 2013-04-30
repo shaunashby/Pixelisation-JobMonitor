@@ -1,0 +1,72 @@
+
+html {
+    height: 100%;
+}
+
+body { 
+    background-color: [% site.col.page %];
+    color: [% site.col.text %];
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+div .status {
+	border: 1px solid grey;
+	}
+	
+.status table {
+	width: 100%;
+	border: 1px;
+}
+
+.status th {
+	background-color: lightblue;
+	text-align: left;
+}
+
+div .jobs {
+	border: 1px solid grey;
+	}
+	
+.jobs table {
+	width: 100%;
+	border: 1px;
+}
+
+.jobs th {
+	background-color: lightblue;
+	text-align: left;
+}
+
+#header {
+    background-color: [% site.col.head %];
+    border-bottom: 1px solid [% site.col.line %];
+}
+
+#footer {
+    background-color: [% site.col.head %];
+    text-align: right;
+    border-top: 1px solid [% site.col.line %];
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 4px;
+}
+
+#content {
+    padding: 10px;
+}
+
+h1.title {
+    padding: 4px;
+    margin: 0px;
+}
+
+.message {
+    color: [% site.col.message %];
+}
+
+.error {
+    color: [% site.col.error %];
+}
